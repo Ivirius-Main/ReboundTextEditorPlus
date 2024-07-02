@@ -6,7 +6,7 @@ public partial class App : Application
     public IThemeService ThemeService { get; set; }
     public new static App Current => (App)Application.Current;
     public string AppVersion { get; set; } = AssemblyInfoHelper.GetAssemblyVersion();
-    public string AppName { get; set; } = "ReboundTextEditorPlus";
+    public string AppName { get; set; } = "Rebound Text Editor Plus";
     public App()
     {
         this.InitializeComponent();
@@ -26,13 +26,15 @@ public partial class App : Application
 
         ThemeService = new ThemeService();
         ThemeService.Initialize(CurrentWindow);
-        ThemeService.ConfigBackdrop();
+        ThemeService.ConfigBackdrop(BackdropType.MicaAlt);
         ThemeService.ConfigElementTheme();
 
         rootFrame.Navigate(typeof(MainPage));
 
         CurrentWindow.Title = CurrentWindow.AppWindow.Title = $"{AppName} v{AppVersion}";
         CurrentWindow.AppWindow.SetIcon("Assets/icon.ico");
+        CurrentWindow.AppWindow.TitleBar.PreferredHeightOption = Microsoft.UI.Windowing.TitleBarHeightOption.Tall;
+
 
         CurrentWindow.Activate();
         await DynamicLocalizerHelper.InitializeLocalizer("en-US");

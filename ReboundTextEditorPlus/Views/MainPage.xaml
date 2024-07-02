@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Page
+    xmlns:wuc1="clr-namespace:WinUICommunity;assembly=WinUICommunity.Components"
     x:Class="ReboundTextEditorPlus.Views.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -13,15 +14,6 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <wuc:TitleBar
-            x:Name="appTitleBar"
-            Title="{x:Bind local:App.Current.AppName}"
-            Icon="{wuc:BitmapIcon Source=ms-appx:///Assets/icon.png}"
-            Subtitle="{x:Bind local:App.Current.AppVersion}">
-            <wuc:TitleBar.Content>
-                <AutoSuggestBox PlaceholderText="Search" QueryIcon="Find" />
-            </wuc:TitleBar.Content>
-        </wuc:TitleBar>
         <StackPanel Grid.Row="1">
             
         </StackPanel>
