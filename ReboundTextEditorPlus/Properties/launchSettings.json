@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ReboundTextEditorPlus (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ReboundTextEditorPlus (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
