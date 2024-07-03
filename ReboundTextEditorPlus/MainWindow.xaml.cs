@@ -132,8 +132,10 @@ public sealed partial class MainWindow : Window
         }
     }
 
-    public void AddTabItem(object args)
+    private void TabbedView_TabCloseRequested(TabView sender, TabViewTabCloseRequestedEventArgs args)
     {
-
+        var TI = args.Item;
+        TabbedView.TabItems.Remove(TI);
+        LoadBounds();
     }
 }
