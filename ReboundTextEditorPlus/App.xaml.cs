@@ -14,22 +14,13 @@ public partial class App : Application
 
     protected async override void OnLaunched(LaunchActivatedEventArgs args)
     {
-        CurrentWindow = new Window();
-
-        CurrentWindow.AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
+        CurrentWindow = new MainWindow();
         CurrentWindow.AppWindow.TitleBar.ButtonBackgroundColor = Colors.Transparent;
-
-        if (CurrentWindow.Content is not Frame rootFrame)
-        {
-            CurrentWindow.Content = rootFrame = new Frame();
-        }
 
         ThemeService = new ThemeService();
         ThemeService.Initialize(CurrentWindow);
         ThemeService.ConfigBackdrop(BackdropType.MicaAlt);
         ThemeService.ConfigElementTheme();
-
-        rootFrame.Navigate(typeof(MainPage));
 
         CurrentWindow.Title = CurrentWindow.AppWindow.Title = $"{AppName} v{AppVersion}";
         CurrentWindow.AppWindow.SetIcon("Assets/icon.ico");
