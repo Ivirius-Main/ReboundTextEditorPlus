@@ -15,7 +15,9 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1">
-            
+            <RelativePanel>
+                <RichEditBox x:Name="editor" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+            </RelativePanel>
         </StackPanel>
     </Grid>
 </Page>

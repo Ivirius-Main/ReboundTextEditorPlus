@@ -75,7 +75,7 @@ public sealed partial class MainWindow : Window
     public void AddTabItem()
     {
         var TI = new TabViewItem();
-        TI.Header = "New Tab";
+        TI.Header = "Untitled";
         TI.IconSource = new SymbolIconSource()
         {
             Symbol = Symbol.Document
