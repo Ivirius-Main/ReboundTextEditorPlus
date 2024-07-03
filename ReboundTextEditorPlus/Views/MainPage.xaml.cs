@@ -3739,12 +3739,12 @@ public sealed partial class MainPage : Page
     private void ShareButton_Click(object sender, RoutedEventArgs e)
     {
         ShareSourceLoad();
-        DataTransferManager.ShowShareUI();
+        //DataTransferManager.ShowShareUI();
     }
 
     private void ShareSourceLoad()
     {
-        DataTransferManager dataTransferManager = DataTransferManager.GetForCurrentView();
+        //DataTransferManager dataTransferManager = DataTransferManager.GetForCurrentView();
         //dataTransferManager.DataRequested += new TypedEventHandler<DataTransferManager, DataRequestedEventArgs>(this.DataRequested);
     }
 
