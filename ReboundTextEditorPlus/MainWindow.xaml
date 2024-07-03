@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <Grid>
-        <TabView Background="{x:Null}" BorderBrush="{x:Null}" x:Name="TabbedView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AddTabButtonClick="TabbedView_AddTabButtonClick" TabCloseRequested="TabbedView_TabCloseRequested" Margin="0, 8, 0, 0">
+        <TabView Background="Transparent" BorderBrush="{x:Null}" x:Name="TabbedView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AddTabButtonClick="TabbedView_AddTabButtonClick" TabCloseRequested="TabbedView_TabCloseRequested" Margin="0, 8, 0, 0">
             <TabView.TabStripHeader>
                 <Grid x:Name="ShellTitlebarInset" Background="Transparent">
                     <StackPanel Orientation="Horizontal">
@@ -18,7 +18,7 @@
                 </Grid>
             </TabView.TabStripHeader>
             <TabView.TabStripFooter>
-                <Border x:Name="AppTitleBar" MinWidth="200" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="40" Margin="0, -8, 0, 0"/>
+                <Border x:Name="AppTitleBar" MinWidth="200" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="40" Margin="0, -8, 0, 0" Background="Transparent"/>
             </TabView.TabStripFooter>
             
         </TabView>
