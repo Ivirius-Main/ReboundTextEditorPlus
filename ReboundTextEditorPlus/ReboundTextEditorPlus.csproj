@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="MainWindow.xaml" />
+    <None Remove="Views\AboutWindow.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="$(ApplicationManifest)" />
@@ -57,6 +58,12 @@
     <PackageReference Include="WinUICommunity.Core" Version="6.9.0" />
     <PackageReference Include="WinUICommunity.LandingPages" Version="6.9.0" />
     <PackageReference Include="WinUICommunity.Win2D" Version="6.9.0" />
+    <PackageReference Include="WinUIEx" Version="2.3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\AboutWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">

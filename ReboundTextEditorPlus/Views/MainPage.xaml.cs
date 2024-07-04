@@ -2664,7 +2664,8 @@ public sealed partial class MainPage : Page
 
     private void AboutItem_Click(object Sender, RoutedEventArgs EvArgs)
     {
-        //AboutBox.Open();
+        AboutWindow aboutwindow = new AboutWindow();
+        aboutwindow.Activate();
     }
 
     #endregion About
@@ -3347,11 +3348,6 @@ public sealed partial class MainPage : Page
             //FontAccent.Foreground = Br;
             //ST.CharacterFormat.ForegroundColor = CF;
         }
-    }
-
-    private void Button_Click_30(object sender, RoutedEventArgs e)
-    {
-        //AboutBox.Close();
     }
 
     private async void HyperlinkButton_Click_4(object sender, RoutedEventArgs e)
