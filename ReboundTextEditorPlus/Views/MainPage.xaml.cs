@@ -3072,8 +3072,8 @@ public sealed partial class MainPage : Page
 
     public void SCheckOn()
     {
-        ApplicationDataContainer LS = ApplicationData.Current.LocalSettings;
-        LS.Values["SCheck"] = "On";
+        //ApplicationDataContainer LS = ApplicationData.Current.LocalSettings;
+        //LS.Values["SCheck"] = "On";
         editor.IsSpellCheckEnabled = true;
         string Y = GetText(editor);
         //if (T != Y)
@@ -3092,8 +3092,8 @@ public sealed partial class MainPage : Page
 
     public void SCheckOff()
     {
-        ApplicationDataContainer LS = ApplicationData.Current.LocalSettings;
-        LS.Values["SCheck"] = "Off";
+        //ApplicationDataContainer LS = ApplicationData.Current.LocalSettings;
+        //LS.Values["SCheck"] = "Off";
         editor.IsSpellCheckEnabled = false;
         string Y = GetText(editor);
         //if (T != Y)
