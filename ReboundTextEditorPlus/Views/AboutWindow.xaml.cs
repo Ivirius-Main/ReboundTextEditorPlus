@@ -41,6 +41,7 @@ namespace ReboundTextEditorPlus.Views
                 Kind = MicaKind.BaseAlt
             };
             version.Text = $"Version {App.Current.AppVersion} - Full release";
+            AppNameTextBlock.Text = $"{App.Current.AppName}";
         }
 
         private void HyperlinkButton_Click_4(object sender, RoutedEventArgs e)
