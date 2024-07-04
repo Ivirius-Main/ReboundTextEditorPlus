@@ -6,7 +6,7 @@ public partial class App : Application
     public IThemeService ThemeService { get; set; }
     public new static App Current => (App)Application.Current;
     public string AppVersion { get; set; } = AssemblyInfoHelper.GetAssemblyVersion();
-    public string AppName { get; set; } = "Rebound Text Editor Plus";
+    public string AppName { get; set; } = "Ivirius Text Editor";
     public App()
     {
         this.InitializeComponent();
