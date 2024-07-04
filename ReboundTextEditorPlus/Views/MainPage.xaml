@@ -1445,10 +1445,10 @@
             <Image Height="100" Width="100" Margin="0,0,0,50" Source="/Assets/AppIcons/AppIcon.png"/>
             <ProgressRing IsActive="True" Width="25" Height="25" Margin="0,175,0,0"/>
         </Grid>
-        <ContentDialog x:Name="ChangelogWindow" Title="Changelog - Version 4.0.0.0" PrimaryButtonText="Close" d:IsHidden="True">
+        <ContentDialog x:Name="ChangelogWindow" Title="Changelog - Version 4.0.0.21" PrimaryButtonText="Close" d:IsHidden="True">
             <Grid Margin="-24,-63,-24,-105">
                 <Grid/>
-                <TextBlock TextWrapping="Wrap" Text="Changelog - Version 4.0.0.0" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="25,24,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="Changelog - Version 4.0.0.21" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="25,24,0,0"/>
                 <StackPanel Margin="24,63,24,105">
                     <TextBlock TextWrapping="Wrap"><Run Text="New features:"/><LineBreak/><Run Text="- Complete rebase on the Windows App SDK with new Tabs UI"/><LineBreak/><Run Text="- Warning: Some features such as open/save dialogs, settings, home menu are unavailable in this release. They will be added later."/><LineBreak/></TextBlock>
                 </StackPanel>

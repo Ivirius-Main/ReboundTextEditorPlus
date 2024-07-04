@@ -15,6 +15,7 @@ using Microsoft.UI.Xaml.Navigation;
 using Windows.Storage;
 using Windows.UI.Notifications;
 using WinUIEx;
+using Microsoft.UI.Composition.SystemBackdrops;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -35,6 +36,10 @@ namespace ReboundTextEditorPlus.Views
             this.SetIsMinimizable(false);
             this.AppWindow.SetIcon("Assets/icon.ico");
             this.AppWindow.Title = $"About {App.Current.AppName}";
+            SystemBackdrop = new MicaBackdrop()
+            {
+                Kind = MicaKind.BaseAlt
+            };
             version.Text = $"Version {App.Current.AppVersion} - Full release";
         }
 
